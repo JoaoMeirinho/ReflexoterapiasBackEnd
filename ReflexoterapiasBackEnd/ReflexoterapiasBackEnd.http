@@ -1,0 +1,6 @@
+@ReflexoterapiasBackEnd_HostAddress = http://localhost:5052
+
+GET {{ReflexoterapiasBackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
