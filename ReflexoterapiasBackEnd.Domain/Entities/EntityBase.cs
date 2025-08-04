@@ -8,5 +8,9 @@ namespace ReflexoterapiasBackEnd.Domain.Entities
 {
     class EntityBase
     {
+        public Guid id { get; set; }
+        public bool Active { get; set; } = true;
+        public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
+
     }
 }
