@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ReflexoterapiasBackEnd.Infra.Repositories
 {
-    class UserRepository(ReflexoDBContext dbContext) : UserRepositoryInterface
+    class UserRepository(ReflexoDBContext dbContext) : IUserRepository
     {
         private readonly ReflexoDBContext _dBContext = dbContext;
         public async Task Add(User user) => await _dBContext.Users.AddAsync(user);

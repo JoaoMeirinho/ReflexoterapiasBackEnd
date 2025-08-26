@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ReflexoterapiasBackEnd.Infra.Repositories.Interfaces
 {
-    interface UserRepositoryInterface
+    interface IUserRepository
     {
         public Task Add(User user);
     }

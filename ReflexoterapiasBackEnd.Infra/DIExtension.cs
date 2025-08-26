@@ -2,14 +2,17 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ReflexoterapiasBackEnd.Infra.DataConfig;
+using ReflexoterapiasBackEnd.Infra.Repositories;
+using ReflexoterapiasBackEnd.Infra.Repositories.Interfaces;
 
 namespace ReflexoterapiasBackEnd.Infra
 {
     public static class DIExtension
     {
-        public static void AddInfra(this IServiceCollection services)
+        public static void AddInfra(this IServiceCollection services, IConfiguration configuration)
         {
-
+            AddDbContext(services, configuration);
+            AddRepositories(services);
         }
 
         public static void AddDbContext(IServiceCollection services, IConfiguration config)
@@ -25,7 +28,7 @@ namespace ReflexoterapiasBackEnd.Infra
 
         private static void AddRepositories(IServiceCollection services)
         {
-            
+            services.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }
