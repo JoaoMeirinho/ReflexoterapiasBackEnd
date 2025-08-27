@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace ReflexoterapiasBackEnd.Domain.Entities
 {
-    public class EntityBase
+    public class Endereco : EntityBase
     {
-        public Guid id { get; set; }
-        public bool Active { get; set; } = true;
-        public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
-
+   
     }
 }
