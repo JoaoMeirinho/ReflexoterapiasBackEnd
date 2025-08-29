@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace ReflexoterapiasBackEnd.Domain.Entities
 {
-    class Client : EntityBase
+    public class Client : EntityBase
     {
         public DateTime DataNascimento { get; set; }
         public Sexo Sexo { get; set; }
+
+        public ICollection<Endereco> Enderecos { get; set; } = new List<Endereco>();
     }
 }
