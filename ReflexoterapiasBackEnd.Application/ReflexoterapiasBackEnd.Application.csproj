@@ -10,12 +10,16 @@
     <Folder Include="DTOs\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Mappers\" />
-    <Folder Include="UseCases\" />
     <Folder Include="Validators\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ReflexoterapiasBackEnd.Communication\ReflexoterapiasBackEnd.Communication.csproj" />
     <ProjectReference Include="..\ReflexoterapiasBackEnd.Domain\ReflexoterapiasBackEnd.Domain.csproj" />
   </ItemGroup>
 

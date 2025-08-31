@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflexoterapiasBackEnd.Doma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflexoterapiasBackEnd.Application", "ReflexoterapiasBackEnd.Application\ReflexoterapiasBackEnd.Application.csproj", "{08E69BAC-37F5-4396-8E11-854182C029EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflexoterapiasBackEnd.Communication", "ReflexoterapiasBackEnd.Communication\ReflexoterapiasBackEnd.Communication.csproj", "{8D2DBEE2-57D2-4B60-A6BA-9C6AF9CDE7C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{08E69BAC-37F5-4396-8E11-854182C029EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08E69BAC-37F5-4396-8E11-854182C029EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08E69BAC-37F5-4396-8E11-854182C029EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D2DBEE2-57D2-4B60-A6BA-9C6AF9CDE7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D2DBEE2-57D2-4B60-A6BA-9C6AF9CDE7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D2DBEE2-57D2-4B60-A6BA-9C6AF9CDE7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D2DBEE2-57D2-4B60-A6BA-9C6AF9CDE7C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
